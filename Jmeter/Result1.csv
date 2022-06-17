@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1655378023222,1447,APIDataDrivenTesting,201,Created,Thread Group 1-1,text,true,,848,231,3,3,https://reqres.in/api/users,1447,0,986
+1655378023549,1120,APIDataDrivenTesting,201,Created,Thread Group 1-3,text,true,,845,224,3,3,https://reqres.in/api/users,1120,0,659
+1655378023222,1447,APIDataDrivenTesting,201,Created,Thread Group 1-2,text,true,,845,226,3,3,https://reqres.in/api/users,1447,0,985
