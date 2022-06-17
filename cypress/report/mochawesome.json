@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-17T15:31:31.731Z",
+    "end": "2022-06-17T15:32:01.423Z",
+    "duration": 29692,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c793fb26-a825-44b5-9e02-d86dc267f306",
+      "title": "",
+      "fullFile": "cypress/integration/bajajtest.js",
+      "file": "cypress/integration/bajajtest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4ddb7bf3-ba2e-4927-a2ac-aef05ac6f859",
+          "title": "bajaj website test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "search test",
+              "fullTitle": "bajaj website test search test",
+              "timedOut": null,
+              "duration": 22252,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.google.com');\ncy.get('input[name=\"q\"]').type(\"Bajaj Finserv Health Limited{enter}\");\ncy.get('#rso > div:nth-child(1) > div > div > div > div > div > div > div.yuRUbf > a').click();",
+              "err": {},
+              "uuid": "f399778d-db28-43a8-8e3e-0a7186979714",
+              "parentUUID": "4ddb7bf3-ba2e-4927-a2ac-aef05ac6f859",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "book appointment test",
+              "fullTitle": "bajaj website test book appointment test",
+              "timedOut": null,
+              "duration": 3662,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchBarInput').type(\"Doctor\");\ncy.get('#searchBarWrapperContainer > div > div.css-eie7o > div > div.css-7cfvtj.css-1ladu4g > p').click();\ncy.get('#__next > div.css-1wea1u8 > div > div:nth-child(5) > div.docProfileContainer > section:nth-child(3) > div.css-w3dfjy > div > div.css-1vjdln7 > div:nth-child(5) > div.css-uvjnz5 > a:nth-child(9)').click();",
+              "err": {},
+              "uuid": "cee89ad5-9795-4f31-bfed-a47eac3d8a53",
+              "parentUUID": "4ddb7bf3-ba2e-4927-a2ac-aef05ac6f859",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f399778d-db28-43a8-8e3e-0a7186979714",
+            "cee89ad5-9795-4f31-bfed-a47eac3d8a53"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25914,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "json": true,
+        "html": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-17T15:28:53.404Z",
+    "end": "2022-06-17T15:29:45.721Z",
+    "duration": 52317,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dcd90d07-60cc-4f4a-a5e3-14009f5b6873",
+      "title": "",
+      "fullFile": "cypress/integration/amazontest.js",
+      "file": "cypress/integration/amazontest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5d54fc58-1da5-4411-8cde-b45801636dfd",
+          "title": "amazon shopping",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login test",
+              "fullTitle": "amazon shopping login test",
+              "timedOut": null,
+              "duration": 11805,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.in');\ncy.get('#nav-signin-tooltip > a > span').click(); //user authentication - add email and password before running this test!\ncy.get('input[name=\"email\"]').type('hrishita28@icloud.com');\ncy.get('#continue').click();\ncy.get('input[name=\"password\"]').type('Hrish_1297');\ncy.get('#signInSubmit').click();",
+              "err": {},
+              "uuid": "970eb2bb-3e76-4655-a0be-4ad91558e75b",
+              "parentUUID": "5d54fc58-1da5-4411-8cde-b45801636dfd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "search product",
+              "fullTitle": "amazon shopping search product",
+              "timedOut": null,
+              "duration": 8153,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchDropdownBox').select('Electronics', {\n  force: true\n});\ncy.get('input[name=\"field-keywords\"]').type(\"iphone 12\");\ncy.get('#nav-search-submit-button').click();",
+              "err": {},
+              "uuid": "f01cd2ec-e301-4b46-94d8-45aba9a42ef7",
+              "parentUUID": "5d54fc58-1da5-4411-8cde-b45801636dfd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "add to cart",
+              "fullTitle": "amazon shopping add to cart",
+              "timedOut": null,
+              "duration": 28445,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"div.s-product-image-container > div > span > a\").first().invoke(\"removeAttr\", \"target\").click();\ncy.get('input[name=\"submit.add-to-cart\"]').click();\ncy.get('#attach-sidesheet-view-cart-button > span > input').click();",
+              "err": {},
+              "uuid": "1eb46a9b-8945-43ec-9b94-1c38d6bfa1a3",
+              "parentUUID": "5d54fc58-1da5-4411-8cde-b45801636dfd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "970eb2bb-3e76-4655-a0be-4ad91558e75b",
+            "f01cd2ec-e301-4b46-94d8-45aba9a42ef7",
+            "1eb46a9b-8945-43ec-9b94-1c38d6bfa1a3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 48403,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "json": true,
+        "html": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
